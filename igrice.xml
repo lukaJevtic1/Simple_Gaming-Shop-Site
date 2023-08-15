@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+        <Igrica>
+            <name>Total War Rome</name>
+            <vrsta>Ratna</vrsta>
+            <cena>53</cena>
+            <s1>twr2.jpg</s1>
+        </Igrica>
+        <Igrica>
+            <name>Assasin Odyseya</name>
+            <vrsta>Ratna</vrsta>
+            <cena>103</cena>
+            <s1>assOdy.jpg</s1>
+        </Igrica>
+        <Igrica>
+            <name>Cities Skylines</name>
+            <vrsta>Strategija</vrsta>
+            <cena>11</cena>
+            <s1>cities.jpg</s1>
+        </Igrica>
+         <Igrica>
+            <name>CS Go</name>
+            <vrsta>Pucacina</vrsta>
+            <cena>15</cena>
+            <s1>csgo.png</s1>
+        </Igrica>
+        <Igrica>
+            <name>Plants vs Zombies</name>
+            <vrsta>Strategija</vrsta>
+            <cena>5</cena>
+            <s1>plantsz.png</s1>
+        </Igrica>
+         
+</root>

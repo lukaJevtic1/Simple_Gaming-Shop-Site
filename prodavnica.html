@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- povezivanje sa css-om -->
+    <script src="functions.js"></script>
+    </head>
+    <body onload="loadXMLDoc()">
+        <div id="wrapper">
+            <header onmouseover="promenisliku(this)" onmouseout="promenisliku2()">
+                <div id="logo">
+                    <img id="mojaSLika" src="images/game.png">
+                </div>
+                <div id="navbar">
+                    <nav class="nav">
+                        <a class="nava" href="pocetna.html">Početna</a>
+                        <a class="nava" href="onama.html">O nama</a>
+                        <a class="nava" href="kontakt.html">Kontakt</a>
+                        <a class="nava" href="prodavnica.html" tabindex="-1" aria-disabled="true">Prodavnica</a>
+                    </nav>
+                </div>
+                
+            </header>
+            </div>
+            <div id="search">
+                    <span>Potraži:</span>
+                    <input id="sadrzajIgre"id="button" type="search" onchange="show()">
+                    <input type="checkbox" id="ratne" onchange="show()">
+                    <label for="scales">Ratne</label>
+                  
+    
+                    <input type="checkbox" id="pucacine" onchange="show()">
+                    <label for="horns">Pucacine</label>
+
+                    <input type="checkbox" id="strategije" onchange="show()">
+                    <label for="strategije">Strategije</label>
+
+
+            </div>
+            <div id="kupovina">
+
+
+            </div>
+            
+        
+    </body>
+</html>

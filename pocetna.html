@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- povezivanje sa css-om -->
+    <script src="functions.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header onmouseover="promenisliku(this)" onmouseout="promenisliku2()">
+                <div id="logo">
+                    <img id="mojaSLika" src="images/game.png">
+                </div>
+                <div id="navbar">
+                    <nav class="nav">
+                        <a class="nava" href="pocetna.html">Početna</a>
+                        <a class="nava" href="onama.html">O nama</a>
+                        <a class="nava" href="kontakt.html">Kontakt</a>
+                        <a class="nava" href="prodavnica.html" tabindex="-1" aria-disabled="true">Prodavnica</a>
+                    </nav>
+                </div>
+    
+            </header>
+          
+            
+            <h1 style="text-align: center;color:rgba(25,82,67,255);">POGLEDAJTE NAŠE IGRE</h1>
+            <br>
+            <br>
+            <br>
+
+    
+                <div class="slideshow-container">
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 4</div>
+                      <img src="images/twr2.jpg" style="width:100%">
+                     
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 4</div>
+                      <img src="images/csgo.png" style="width:100%">
+                 
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 4</div>
+                      <img src="images/cities.jpg" style="width:100%">
+              
+                    </div>
+                   
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="images/plantsz.png" style="width:100%">
+                     
+                      </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                    
+
+
+                </div> 
+                <br>
+                <br>
+                <h1 style="text-align: center;color:rgba(25,82,67,255);">POGLEDAJTE NAŠE LIČNE PROIZVODE</h1>
+                <br>
+                <div id="nasiproizvodi">
+                        <img src="images/imimajica.png">
+                        <img src="images/imiapp.png">
+                </div>
+
+                <div id="footer">
+                    <span>Copyright &copy; Luka Jevtić 64-2017 - All Rights Reserved</span>
+                </div>
+            
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+    </body>
+</html>
